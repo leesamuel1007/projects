@@ -1,0 +1,102 @@
+[
+{
+    "user_id": 39,
+    "step": -2,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "step": -2,
+    "actions_before_this_behavior": "start ",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "step": 29,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "action_step_start": 53,
+    "action_step_end": 57,
+    "behavior_description": "move back and forth, up and down trying to alignment",
+    "annotation": "alignment"
+},
+{
+    "user_id": 39,
+    "step": 71,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "step": 88,
+    "actions_before_this_behavior": "grasp jar ",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "false_action": "Tilt",
+    "correct_action": "move horizontally",
+    "action_step_start": 143,
+    "action_step_end": 147,
+    "annotation": "false control"
+},
+{
+    "user_id": 39,
+    "step": 169,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "action_step_start": 169,
+    "action_step_end": 192,
+    "behavior_description": "move up and down and horizontally tring to align with the location of the cup",
+    "annotation": "alignment"
+},
+{
+    "user_id": 39,
+    "action_step_start": 207,
+    "action_step_end": 227,
+    "behavior_description": "moving horizontally, up and down trying to align",
+    "annotation": "alignment"
+},
+{
+    "user_id": 39,
+    "action_step_start": 250,
+    "action_step_end": 271,
+    "behavior_description": "horizontally move back and forth, trying to find the right position to pour",
+    "annotation": "alignment"
+},
+{
+    "user_id": 39,
+    "step": 288,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 39,
+    "false_action": "move horizontally and up and down",
+    "correct_action": "turn gripper",
+    "action_step_start": 310,
+    "action_step_end": 330,
+    "annotation": "false control"
+},
+{
+    "user_id": 39,
+    "step": 341,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

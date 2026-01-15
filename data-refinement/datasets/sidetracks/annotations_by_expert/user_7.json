@@ -1,0 +1,147 @@
+[
+{
+    "user_id": 7,
+    "false_action": "move horizontally",
+    "correct_action": "move down",
+    "action_step_start": 3,
+    "action_step_end": 11,
+    "annotation": "false control"
+},
+{
+    "user_id": 7,
+    "step": 11,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "step": 29,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "action_step_start": 30,
+    "action_step_end": 62,
+    "behavior_description": "move horizontally, move vertically, tilt, turn gripper",
+    "annotation": "test controller"
+},
+{
+    "user_id": 7,
+    "action_step_start": 89,
+    "action_step_end": 114,
+    "behavior_description": "move along x axis while approaching",
+    "annotation": "alignment"
+},
+{
+    "user_id": 7,
+    "step": 148,
+    "actions_before_this_behavior": "approch jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "step": 160,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "false_action": "move horizontally",
+    "correct_action": "move up",
+    "action_step_start": 164,
+    "action_step_end": 175,
+    "annotation": "false control"
+},
+{
+    "user_id": 7,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 178,
+    "action_step_end": 205,
+    "annotation": "false control"
+},
+{
+    "user_id": 7,
+    "action_step_start": 204,
+    "action_step_end": 225,
+    "behavior_description": "move horizontally x and y, tilt in 2 directions",
+    "annotation": "test controller"
+},
+{
+    "user_id": 7,
+    "step": 225,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "false_action": "move up and down",
+    "correct_action": "move horizontally",
+    "action_step_start": 235,
+    "action_step_end": 245,
+    "annotation": "false control"
+},
+{
+    "user_id": 7,
+    "step": 259,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "action_step_start": 266,
+    "action_step_end": 282,
+    "behavior_description": "move along x and y axis back and forth",
+    "annotation": "alignment"
+},
+{
+    "user_id": 7,
+    "action_step_start": 286,
+    "action_step_end": 293,
+    "behavior_description": "move along x axis back and forth",
+    "annotation": "alignment"
+},
+{
+    "user_id": 7,
+    "step": 305,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 7,
+    "false_action": "turn gripper wrong direction",
+    "correct_action": "turn gripper",
+    "action_step_start": 303,
+    "action_step_end": 314,
+    "annotation": "false control"
+},
+{
+    "user_id": 7,
+    "action_step_start": 322,
+    "action_step_end": 333,
+    "behavior_description": "move back and forth x axis",
+    "annotation": "alignment"
+},
+{
+    "user_id": 7,
+    "action_step_start": 345,
+    "action_step_end": 394,
+    "behavior_description": "move back and forth x and y",
+    "annotation": "alignment"
+},
+{
+    "user_id": 7,
+    "step": 422,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="jars">
+
+    <!-- <xacro:include filename="$(find sim-env)/xacro_files/inertia_and_collision_macros.xacro"/> -->
+
+
+    <xacro:macro name="Box_inertial_matrix" params="m l w h">
+       <inertial>
+               <mass value="${m}" />
+               <inertia ixx="${m*(h*h + l*l)/12}" ixy = "0" ixz = "0"
+                   iyy="${m*(w*w + l*l)/12}" iyz= "0"
+                   izz="${m*(w*w + h*h)/12}" />
+       </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="one_table">
+
+        <link name="world"/>
+        <link name="table">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <box size="0.6 0.2 0.05"/>
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <box size="0.6 0.2 0.05"/>
+                </geometry>
+            </collision>
+
+            <xacro:Box_inertial_matrix m="10" l="0.6" w="0.2" h="0.11"/>
+        </link>
+        <joint name="cam_joint" type="fixed">
+            <origin xyz="0.3 0.34 0.025" rpy="0 0 0"/>
+            <parent link="world"/>
+            <child link="table"/>
+        </joint>
+        <gazebo reference="table">
+            <material>Gazebo/Black</material>
+        </gazebo>
+    </xacro:macro>
+
+    <xacro:one_table/>
+</robot>

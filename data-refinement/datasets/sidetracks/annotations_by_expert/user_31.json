@@ -1,0 +1,97 @@
+[
+{
+    "user_id": 31,
+    "step": 2,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "step": 28,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "step": 89,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "step": 113,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "step": 149,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "step": 183,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "action_step_start": 243,
+    "action_step_end": 316,
+    "behavior_description": "move horizontally back and forth, up and down",
+    "annotation": "alignment"
+},
+
+{
+    "user_id": 31,
+    "step": 432,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "action_step_start": 395,
+    "action_step_end": 416,
+    "behavior_description": "move horizontally back and forth",
+    "annotation": "alignment"
+},
+
+{
+    "user_id": 31,
+    "false_action": "tilt",
+    "correct_action": "turn gripper",
+    "action_step_start": 419,
+    "action_step_end": 458,
+    "annotation": "false control"
+},
+{
+    "user_id": 31,
+    "step": 516,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 31,
+    "false_action": "tilt",
+    "correct_action": "turn gripper",
+    "action_step_start": 497,
+    "action_step_end": 523,
+    "annotation": "false control"
+},
+{
+    "user_id": 31,
+    "action_step_start": 460,
+    "action_step_end": 500,
+    "behavior_description": "move horizontally back and forth",
+    "annotation": "alignment"
+}
+]

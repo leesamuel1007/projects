@@ -1,0 +1,38 @@
+[
+{
+    "user_id": 35,
+    "step": 260,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 35,
+    "step": 38,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 35,
+    "step": 66,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 35,
+    "false_action": "open gripper, move along y axis, move down",
+    "correct_action": "move up",
+    "action_step_start": 94,
+    "action_step_end": 147,
+    "annotation": "false control"
+},
+{
+    "user_id": 35,
+    "step": 150,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

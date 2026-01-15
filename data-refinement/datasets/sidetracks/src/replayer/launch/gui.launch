@@ -1,0 +1,9 @@
+<launch>\
+    <arg name="bag" default="0" />
+    <param name="/replay/playflag" type="int" value="1"/>
+    <include file="$(find replayer)/launch/replayer.launch">
+        <arg name="bag" value="$(arg bag)" />
+    </include>
+    <!-- <node name="replayer_gui" pkg="replayer" type="gui_interface.py"/> -->
+    <node name="replayer_gui" pkg="replayer" type="gui_interface.py"/>
+</launch>

@@ -1,0 +1,96 @@
+[
+{
+    "user_id": 10,
+    "false_action": "turn gripper",
+    "correct_action": "move down",
+    "action_step_start": 11,
+    "action_step_end": 14,
+    "annotation": "false control"
+},
+{
+    "user_id": 10,
+    "step": 14,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "action_step_start": 28,
+    "action_step_end": 55,
+    "behavior_description": "turn gripper back and forth, move up, move down",
+    "annotation": "alignment"
+},
+{
+    "user_id": 10,
+    "step": 62,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "step": 98,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "step": 107,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "step": 107,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "false_action": "tilt",
+    "correct_action": "move horizontally along y axis",
+    "action_step_start": 110,
+    "action_step_end": 116,
+    "annotation": "false control"
+},
+{
+    "user_id": 10,
+    "step": 157,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "action_step_start": 173,
+    "action_step_end": 183,
+    "behavior_description": "move up and down",
+    "annotation": "alignment"
+},
+{
+    "user_id": 10,
+    "step": 223,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 10,
+    "false_action": "open gripper",
+    "correct_action": "turn gripper",
+    "action_step_start": 241,
+    "action_step_end": 244,
+    "annotation": "false control"
+},
+{
+    "user_id": 10,
+    "step": 244,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

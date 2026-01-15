@@ -1,0 +1,81 @@
+[
+{
+    "user_id": 30,
+    "step": 0,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "action_step_start": 7,
+    "action_step_end": 94,
+    "behavior_description": "tilt,move horizontally, turn gipper, open and close gripper",
+    "annotation": "test controller"
+},
+{
+    "user_id": 30,
+    "false_action": "turn and open gripper",
+    "correct_action": "",
+    "action_step_start": 105,
+    "action_step_end": 137,
+    "annotation": "false control"
+},
+{
+    "user_id": 30,
+    "step": 143,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "action_step_start": 136,
+    "action_step_end": 197,
+    "behavior_description": "move horiztally or along axis back and forth, open and close gripper",
+    "annotation": "test controller"
+},
+{
+    "user_id": 30,
+    "step": 231,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "step": 247,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "step": 278,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "step": 326,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "apporach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 30,
+    "false_action": "open gripper",
+    "correct_action": "move down",
+    "action_step_start": 326,
+    "action_step_end": 333,
+    "annotation": "false control"
+},
+{
+    "user_id": 30,
+    "step": 343,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

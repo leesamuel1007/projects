@@ -1,0 +1,89 @@
+[
+{
+    "user_id": 16,
+    "step": -1,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "step": 8,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "step": 61,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "step": 66,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "step": 70,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "false_action": "move in x axis",
+    "correct_action": "move in wrong direction",
+    "action_step_start": 79,
+    "action_step_end": 83,
+    "annotation": "false control"
+},
+{
+    "user_id": 16,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 86,
+    "action_step_end": 90,
+    "annotation": "false control"
+},
+{
+    "user_id": 16,
+    "step": 109,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "action_step_start": 114,
+    "action_step_end": 128,
+    "behavior_description": "move along x axis",
+    "annotation": "alignment"
+},
+{
+    "user_id": 16,
+    "step": 129,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 16,
+    "false_action": "turn gripper wrong direction",
+    "correct_action": "turn gripper",
+    "action_step_start": 128,
+    "action_step_end": 135,
+    "annotation": "false control"
+},
+{
+    "user_id": 16,
+    "step": 157,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

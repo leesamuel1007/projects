@@ -1,0 +1,112 @@
+[
+    {
+        "user_id": 0,
+        "step": 4,
+        "actions_before_this_behavior": "start",
+        "actions_after_this_behavior": "move down to jar",
+        "annotation": "task phase change"
+    },
+{
+    "user_id": 0,
+    "false_action": "close gripper",
+    "correct_action": "move horizontally",
+    "action_step_start": 21,
+    "action_step_end": 31,
+    "annotation": "false control"
+},
+{
+    "user_id": 0,
+    "step": 22,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "action_step_start": 22,
+    "action_step_end": 38,
+    "behavior_description": "gripper,move horizontally",
+    "annotation": "test controller"
+},
+{
+    "user_id": 0,
+    "step": 82,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "step": 95,
+    "actions_before_this_behavior": "grsap jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 97,
+    "action_step_end": 105,
+    "annotation": "false control"
+},
+{
+    "user_id": 0,
+    "step": 116,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "false_action": "tilt",
+    "correct_action": "move horizontally",
+    "action_step_start": 116,
+    "action_step_end": 120,
+    "annotation": "false control"
+},
+{
+    "user_id": 0,
+    "step": 143,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "action_step_start": 143,
+    "action_step_end": 160,
+    "behavior_description": "tilt, move horizontally",
+    "annotation": "test controller"
+},
+{
+    "user_id": 0,
+    "action_step_start": 169,
+    "action_step_end": 180,
+    "behavior_description": "horizontally",
+    "annotation": "alignment"
+},
+{
+    "user_id": 0,
+    "step": 178,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 0,
+    "action_step_start": 208,
+    "action_step_end": 235,
+    "behavior_description": "tilt,move horizontally,move vertically",
+    "annotation": "alignment"
+},
+{
+    "user_id": 0,
+    "step": 295,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]
+
+

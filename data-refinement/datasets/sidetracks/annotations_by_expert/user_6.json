@@ -1,0 +1,74 @@
+[
+{
+    "user_id": 6,
+    "step": 3,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "step": 21,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "step": 40,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "false_action": "move horizontally",
+    "correct_action": "move up",
+    "action_step_start": 52,
+    "action_step_end": 54,
+    "annotation": "false control"
+},
+{
+    "user_id": 6,
+    "step": 51,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "step": 59,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "step": 88,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "step": 94,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 6,
+    "false_action": "move up and down",
+    "correct_action": "tilt",
+    "action_step_start": 121,
+    "action_step_end": 127,
+    "annotation": "false control"
+},
+{
+    "user_id": 6,
+    "step": 159,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]

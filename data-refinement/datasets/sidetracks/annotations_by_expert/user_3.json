@@ -1,0 +1,114 @@
+[
+{
+    "user_id": 3,
+    "step": 0,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "false_action": "tilt",
+    "correct_action": "move down",
+    "action_step_start": 0,
+    "action_step_end": 5,
+    "annotation": "false control"
+},
+{
+    "user_id": 3,
+    "step": 21,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "action_step_start": 29,
+    "action_step_end": 37,
+    "behavior_description": "move horizontally back and forth",
+    "annotation": "alignment"
+},
+{
+    "user_id": 3,
+    "action_step_start": 51,
+    "action_step_end": 62,
+    "behavior_description": "wobble around x axis while approaching",
+    "annotation": "alignment"
+},
+{
+    "user_id": 3,
+    "step": 70,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "step": 80,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "false_action": "move up",
+    "correct_action": "move horizontally",
+    "action_step_start": 80,
+    "action_step_end": 87,
+    "annotation": "false control"
+},
+{
+    "user_id": 3,
+    "step": 91,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "step": 105,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 105,
+    "action_step_end": 110,
+    "annotation": "false control"
+},
+{
+    "user_id": 3,
+    "false_action": "move up",
+    "correct_action": "move down",
+    "action_step_start": 131,
+    "action_step_end": 134,
+    "annotation": "false control"
+},
+{
+    "user_id": 3,
+    "action_step_start": 141,
+    "action_step_end": 157,
+    "false_action": "move backward",
+    "correct_action": "move forth",
+    "behavior_description": "move back and forth in x axis",
+    "annotation": "false control"
+},
+{
+    "user_id": 3,
+    "step": 158,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 3,
+    "step": 224,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]
+

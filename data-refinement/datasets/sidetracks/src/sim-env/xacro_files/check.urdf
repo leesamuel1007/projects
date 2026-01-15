@@ -1,0 +1,18 @@
+<robot name="jars">
+<material name="Black">
+<color rgba="0 0 0 1" />
+</material>
+
+<material name="White">
+<color rgba="1 1 1 0.95" />
+</material>
+
+<material name="Blue">
+<color rgba="0 0 1 1" />
+</material>
+
+<material name="Yellow">
+<color rgba="1 0.4 0 1" />
+</material>
+<link name="jar1">
+<visual><origin rpy="0 0 0" xyz="0.38 0.36 0.11" /><geometry><cylinder length="0.1" radius="0.02" /></geometry><material name="Yellow" /></visual><collision><origin rpy="0 0 0" xyz="0.38 0.36 0.11" /><geometry><cylinder length="0.1" radius="0.02" /></geometry></collision><inertial><mass value="2.0" /><origin xyz="0.38 0.36 0.11" /><inertia ixx="0.0018666666666666669" ixy="0" ixz="0" iyy="0.0018666666666666669" iyz="0" izz="0.0004" /></inertial></link><link name="jar2"><visual><origin rpy="0 0 0" xyz="-0.38 0.36 0.11" /><geometry><cylinder length="0.1" radius="0.02" /></geometry><material name="Yellow" /></visual><collision><origin rpy="0 0 0" xyz="-0.38 0.36 0.11" /><geometry><cylinder length="0.1" radius="0.02" /></geometry></collision><inertial><mass value="2.0" /><origin xyz="-0.38 0.36 0.11" /><inertia ixx="0.0018666666666666669" ixy="0" ixz="0" iyy="0.0018666666666666669" iyz="0" izz="0.0004" /></inertial></link><origin xyz="0 0 0" rpy="0 -0 0" /></robot>

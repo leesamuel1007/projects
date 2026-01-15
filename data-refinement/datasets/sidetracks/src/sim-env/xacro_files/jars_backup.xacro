@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="jars">
+
+    <!-- <xacro:include filename="$(find sim-env)/xacro_files/inertia_and_collision_macros.xacro"/> -->
+
+    <xacro:macro name="cylinder_inertial_matrix" params="m r h x y z">
+        <inertial>
+            <mass value="${m}" />
+            <origin xyz="${x} ${y} ${z}"/>
+            <inertia ixx="${m*(3*r*r+h*h)/12}" ixy = "0" ixz = "0"
+                iyy="${m*(3*r*r+h*h)/12}" iyz = "0"
+                izz="${m*r*r/2}" /> 
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="Box_inertial_matrix" params="m l w h x y z">
+       <inertial>
+               <mass value="${m}" />
+               <origin xyz="${x} ${y} ${z}"/>
+               <inertia ixx="${m*(h*h + l*l)/12}" ixy = "0" ixz = "0"
+                   iyy="${m*(w*w + l*l)/12}" iyz= "0"
+                   izz="${m*(w*w + h*h)/12}" />
+       </inertial>
+    </xacro:macro>
+
+    <material name="Black">
+        <color rgba="0 0 0 1"/>
+    </material>
+    <material name="White">
+        <color rgba="1 1 1 0.95"/>
+    </material>
+    <material name="Blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+    <material name="Yellow">
+        <color rgba="1 0.4 0 1"/>
+    </material>
+
+    <link name="world"/>
+
+    <link name="jar1">
+        <visual>
+            <origin xyz="0.38 0.36 0.11" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+            <material name="Yellow"/>
+        </visual>
+        <collision>
+            <origin xyz="0.38 0.36 0.11" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+        </collision>
+
+        <xacro:cylinder_inertial_matrix m="2.0" r="0.02" h="0.1" x="0.38" y="0.36" z="0.11"/>
+    </link>
+
+
+    <link name="jar2">
+        <visual>
+            <origin xyz="0.26 0.34 0.11" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+            <material name="Yellow"/>
+        </visual>
+        <collision>
+            <origin xyz="0.38 0.36 0.05" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+        </collision>
+
+        <xacro:cylinder_inertial_matrix m="2.0" r="0.02" h="0.1" x="0.26" y="0.34" z="0.11"/>
+    </link>
+
+    <link name="jar3">
+        <visual>
+            <origin xyz="0.126 0.34 0.11" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+            <material name="Yellow"/>
+        </visual>
+        <collision>
+            <origin xyz="0.38 0.36 0.05" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+            </geometry>
+        </collision>
+
+        <xacro:cylinder_inertial_matrix m="2.0" r="0.02" h="0.1" x="0.126" y="0.34" z="0.11"/>
+    </link>
+
+
+    <link name="table">
+        <visual>
+            <origin xyz="0.2 0.34 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.6 0.2 0.11"/>
+            </geometry>
+            <material name="Black"/>
+        </visual>
+        <collision>
+            <origin xyz="0.2 0.34 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.6 0.2 0.11"/>
+            </geometry>
+        </collision>
+
+        <xacro:Box_inertial_matrix m="10" l="0.6" w="0.2" h="0.11" x="0.2" y="0.34" z="0"/>
+    </link>
+
+
+    <joint name="cam_joint" type="fixed">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <parent link="world"/>
+            <child link="table"/>
+            
+    </joint>
+
+
+</robot>

@@ -1,0 +1,7 @@
+<launch>\
+    <arg name="bag" default="0" />
+    <param name="/replay/playflag" type="int" value="0"/>
+    <node name="replayer" pkg="replayer" type="replayer.py">
+        <param name="bag" value="$(arg bag)" />
+    </node>
+</launch>

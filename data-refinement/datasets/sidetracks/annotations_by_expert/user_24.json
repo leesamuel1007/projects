@@ -1,0 +1,100 @@
+
+[
+    {
+    "user_id": 24,
+    "step": 3,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 24,
+    "false_action": "tilt",
+    "correct_action": "move down",
+    "action_step_start": 2,
+    "action_step_end": 28,
+    "annotation": "false control"
+},
+{
+    "user_id": 24,
+    "step": 79,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 24,
+    "false_action": "move down",
+    "correct_action": "move sideways",
+    "action_step_start": 91,
+    "action_step_end": 98,
+    "annotation": "false control"
+},
+{
+    "user_id": 24,
+    "false_action": "turn gripper",
+    "correct_action": "move to jar",
+    "action_step_start": 114,
+    "action_step_end": 123,
+    "annotation": "false control"
+},
+{
+    "user_id": 24,
+    "action_step_start": 144,
+    "action_step_end": 158,
+    "behavior_description": "",
+    "annotation": "alignment"
+},
+{
+    "user_id": 24,
+    "false_action": "tilt down beyond limit",
+    "correct_action": "",
+    "action_step_start": 194,
+    "action_step_end": 203,
+    "annotation": "false control"
+},
+{
+    "user_id": 24,
+    "action_step_start": 227,
+    "action_step_end": 238,
+    "behavior_description": "",
+    "annotation": "alignment"
+},
+{
+    "user_id": 24,
+    "step": 243,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 24,
+    "step": 269,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 24,
+    "step": 269,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 24,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 311,
+    "action_step_end": 318,
+    "annotation": "false control"
+},
+{
+    "user_id": 24,
+    "false_action": "tilt",
+    "correct_action": "move up",
+    "action_step_start": 328,
+    "action_step_end": 335,
+    "annotation": "false control"
+}
+]

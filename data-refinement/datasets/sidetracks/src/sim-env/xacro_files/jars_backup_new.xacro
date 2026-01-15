@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="jars">
+
+    <!-- <xacro:include filename="$(find sim-env)/xacro_files/inertia_and_collision_macros.xacro"/> -->
+
+    <xacro:arg name="jar_number" default="0"/>
+    <xacro:arg name="jar_pos_x" default="0.1"/>
+    <xacro:arg name="jar_pos_y" default="0.1"/>
+    <xacro:arg name="jar_pos_z" default="0.1"/>
+
+    <xacro:macro name="cylinder_inertial_matrix" params="m r h xyz">
+        <inertial>
+            <mass value="${m}" />
+            <origin xyz="${xyz}"/>
+            <inertia ixx="${m*(3*r*r+h*h)/12}" ixy = "0" ixz = "0"
+                iyy="${m*(3*r*r+h*h)/12}" iyz = "0"
+                izz="${m*r*r/2}" /> 
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="Box_inertial_matrix" params="m l w h x y z">
+       <inertial>
+               <mass value="${m}" />
+               <origin xyz="${x} ${y} ${z}"/>
+               <inertia ixx="${m*(h*h + l*l)/12}" ixy = "0" ixz = "0"
+                   iyy="${m*(w*w + l*l)/12}" iyz= "0"
+                   izz="${m*(w*w + h*h)/12}" />
+       </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="one_jar" params="prefix:=jar1 xyz">
+        <link name="${prefix}">
+            <visual>
+                <origin xyz="${xyz}" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="0.1" radius="0.02"/>
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="${xyz}" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="0.1" radius="0.02"/>
+                </geometry>
+                <surface>
+                    <friction>
+                    <ode>
+                        <mu>0.11</mu>
+                        <mu2>0.11</mu2>
+                    </ode>
+                    </friction>
+                </surface>
+            </collision>
+
+            <xacro:cylinder_inertial_matrix m="0.3" r="0.02" h="0.1" xyz="${xyz}"/>
+        </link>
+    </xacro:macro>
+
+    <xacro:one_jar prefix="jar$(arg jar_number)" xyz="$(arg jar_pos_x) $(arg jar_pos_y) $(arg jar_pos_z)"/>
+</robot>

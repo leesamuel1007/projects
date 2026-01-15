@@ -1,0 +1,51 @@
+<launch>\
+    <arg name="x1" default="0.2"/>
+    <arg name="y1" default="0.2"/>
+    <arg name="z1" default="0"/>
+
+
+    <!-- Spawn your robot in Gazebo -->
+    <!-- Spawn gen3 arm -->
+    <include file="$(find kortex_gazebo)/launch/spawn_kortex_robot.launch">
+        <arg name = "arm" value = "gen3_lite"/>
+        <!-- <arg name = "gripper" value = "robotiq_2f_140"/> -->
+    </include>
+
+    <!-- Spawn jars -->
+    <group ns="jar1_group">
+        <param name="jar1_description" command="$(find xacro)/xacro --inorder '$(find sim-env)/xacro_files/jars.xacro' 
+        jar_number:=1 jar_pos_x:=0.53 jar_pos_y:=0.29 jar_pos_z:=0.11" />
+        <node name="jar1_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -model jar1_model -param jar1_description -robot_namespace jar1_space"/> 
+    </group>
+
+
+    <group ns="jar2_group">
+        <param name="jar2_description" command="$(find xacro)/xacro --inorder '$(find sim-env)/xacro_files/jars.xacro' 
+        jar_number:=2 jar_pos_x:=0.41 jar_pos_y:=0.29 jar_pos_z:=0.11" />
+        <node name="jar2_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -model jar2_model -param jar2_description -robot_namespace jar2_space"/> 
+    </group>
+
+    <group ns="jar3_group">
+        <param name="jar3_description" command="$(find xacro)/xacro --inorder '$(find sim-env)/xacro_files/jars.xacro' 
+        jar_number:=3 jar_pos_x:=0.276 jar_pos_y:=0.29 jar_pos_z:=0.11" />
+        <node name="jar3_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -model jar3_model -param jar3_description -robot_namespace jar3_space"/> 
+    </group>
+
+    <group ns="jar4_group">
+        <param name="jar4_description" command="$(find xacro)/xacro --inorder '$(find sim-env)/xacro_files/jars.xacro' 
+        jar_number:=4 jar_pos_x:=0.126 jar_pos_y:=0.29 jar_pos_z:=0.11" />
+        <node name="jar4_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -model jar4_model -param jar4_description -robot_namespace jar4_space"/> 
+    </group>
+
+    <group ns="shelf_group">
+        <param name="shelf_description" command="$(find xacro)/xacro --inorder '$(find sim-env)/xacro_files/shelf.xacro'"/>
+        <node name="shelf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -model shelf_model -param shelf_description -robot_namespace shelf_space"/> 
+    </group>
+
+
+</launch>

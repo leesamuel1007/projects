@@ -1,0 +1,82 @@
+[
+{
+    "user_id": 2,
+    "step": 22,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "move down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "false_action": "tilt",
+    "correct_action": "move down",
+    "action_step_start": 22,
+    "action_step_end": 29,
+    "annotation": "false control"
+},
+{
+    "user_id": 2,
+    "step": 47,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "step": 89,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "step": 106,
+    "actions_before_this_behavior": "grsap jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "false_action": "move horizontally",
+    "correct_action": "move up",
+    "action_step_start": 125,
+    "action_step_end": 133,
+    "annotation": "false control"
+},
+{
+    "user_id": 2,
+    "action_step_start": 161,
+    "action_step_end": 177,
+    "behavior_description": "turn gripper, move vertically, tilt",
+    "annotation": "test controller"
+},
+{
+    "user_id": 2,
+    "step": 178,
+    "actions_before_this_behavior": "lift jar ",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "step": 223,
+    "actions_before_this_behavior": "move cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "step": 223,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 2,
+    "step": 280,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+
+]

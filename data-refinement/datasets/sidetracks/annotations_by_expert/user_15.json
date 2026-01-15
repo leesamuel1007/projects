@@ -1,0 +1,102 @@
+[
+    {
+    "user_id": 15,
+    "action_step_start": 2,
+    "action_step_end": 20,
+    "behavior_description": "move along x axis back and forth",
+    "annotation": "test controller"
+},
+{
+    "user_id": 15,
+    "false_action": "tilt up",
+    "correct_action": "move down",
+    "action_step_start": 20,
+    "action_step_end": 29,
+    "annotation": "false control"
+},
+{
+    "user_id": 15,
+    "step": 29,
+    "actions_before_this_behavior": "start",
+    "actions_after_this_behavior": "mvoe down to jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "step": 49,
+    "actions_before_this_behavior": "move down to jar",
+    "actions_after_this_behavior": "approach jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "action_step_start": 49,
+    "action_step_end": 68,
+    "behavior_description": "move along x axis",
+    "annotation": "alignment"
+},
+{
+    "user_id": 15,
+    "step": 132,
+    "actions_before_this_behavior": "approach jar",
+    "actions_after_this_behavior": "grasp jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "step": 141,
+    "actions_before_this_behavior": "grasp jar",
+    "actions_after_this_behavior": "lift jar",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "step": 164,
+    "actions_before_this_behavior": "lift jar",
+    "actions_after_this_behavior": "move to cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "step": 184,
+    "actions_before_this_behavior": "move to cup",
+    "actions_after_this_behavior": "approach cup",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "action_step_start": 198,
+    "action_step_end": 207,
+    "behavior_description": "move along x axis",
+    "annotation": "alignment"
+},
+{
+    "user_id": 15,
+    "action_step_start": 210,
+    "action_step_end": 227,
+    "behavior_description": "move along z axis",
+    "annotation": "alignment"
+},
+{
+    "user_id": 15,
+    "step": 229,
+    "actions_before_this_behavior": "approach cup",
+    "actions_after_this_behavior": "pour",
+    "annotation": "task phase change"
+},
+{
+    "user_id": 15,
+    "false_action": "turn gripper wrong direction",
+    "correct_action": "turn gripper",
+    "action_step_start": 229,
+    "action_step_end": 233,
+    "annotation": "false control"
+},
+{
+    "user_id": 15,
+    "step": 304,
+    "actions_before_this_behavior": "pour",
+    "actions_after_this_behavior": "end",
+    "annotation": "task phase change"
+}
+]
